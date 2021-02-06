@@ -38,3 +38,9 @@ for now this course will be organized by Coursera order list and under each less
 ## Note
 - the component name's first letter should be capital letter. 
 
+---
+# 2. Building Content with JSX
+## JSX 
+- is converted to original js code with babel react command line tool thus we know that babel includes React within it's code  
+- just for convension issue '' are used for js and "" used for JSX
+- JSX can't show objects which is not valid as a react child(inside tag prenthesis or into innerHtml strgin)
