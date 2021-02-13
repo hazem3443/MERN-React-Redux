@@ -82,9 +82,23 @@ for now this course will be organized by Coursera order list and under each less
 - we call geolocation service
 - app returns JSX, gets rendered to page as HTML
 - we get result of geolocation
+- we update our state object with a call to "this.setState"
+- react sees that we updated the state of a component 
+- react calls our render method a second time
+- render method returns some (updated) JSX
+- React takes that JSX and updates content on the screen
 
 ## Rules of class components
 - must be a javascript Class
 - must extend (subclass) React.Component
 - must define a render method that returns some amount of jsx
   
+# 5. State in React Components
+## Rulse of state
+- only usable with class components
+- don's confuse states with props
+- 'State' is a js object that containes data relevant to a component
+- updating 'state' on a component causes the component to almost instantly rerender
+- state must be initialized when a component is created
+- state can only be updated using the function 'setState'
+
