@@ -44,3 +44,24 @@ for now this course will be organized by Coursera order list and under each less
 - is converted to original js code with babel react command line tool thus we know that babel includes React within it's code  
 - just for convension issue '' are used for js and "" used for JSX
 - JSX can't show objects which is not valid as a react child(inside tag prenthesis or into innerHtml strgin)
+
+# 3. Communicating with Props
+
+## Component Nesting
+- a component can be shown inside of another using (import & export)
+## Component Reusability
+- we want to make components that can be easily reused through out application
+## Component Configuration
+- we should be able to configure a component when it is created
+
+## Creating a Reusable, Configurable Component
+- identify the JSX that appears to be duplicated
+- (for naming) what is the purpose of that block of JSX? think of a descriptive name for what it does 
+- (file with name as component) create a new file to house this new component - it should have the same name as component
+- create new component in the new file, paste the jsx into it 
+- make the new component configurable by using react's 'props' system 
+
+
+## Props
+- System for passing data from a present component to a child one
+- Goal is to customize or configure a child component
