@@ -65,3 +65,26 @@ for now this course will be organized by Coursera order list and under each less
 ## Props
 - System for passing data from a present component to a child one
 - Goal is to customize or configure a child component
+
+# 4. Structuring Apps with Class-Based Components
+
+## Class base component vs Functional component 
+- Functional component is good for simple content
+- Class base component is good for just about everything else
+  - benefits fo calss based components
+    - Easier code organization 
+    - can use 'state' to handle user input
+    - understands lifecycle events (easier to do things when the app first starts)
+
+## what happends to our application inside users' brownser (for this app)
+- JS files loaded by browser
+- App component gets created
+- we call geolocation service
+- app returns JSX, gets rendered to page as HTML
+- we get result of geolocation
+
+## Rules of class components
+- must be a javascript Class
+- must extend (subclass) React.Component
+- must define a render method that returns some amount of jsx
+  
