@@ -102,3 +102,14 @@ for now this course will be organized by Coursera order list and under each less
 - state must be initialized when a component is created
 - state can only be updated using the function 'setState'
 
+# 6. Understanding Lifecycle Methods
+## Component LifeCycle
+- constructor : **good place to do one time setup**
+- render : **avoid doing anything besides returning JSX**
+- **content visible on screen**
+- componentDidMount : **good place to do data loading**
+- **sit and wait for updates**
+- componentDidUpdate : **good place to do more data-loading when state/props change**
+- **sit and wait until this component is not longer shown**
+- componetWillUnmount : **good place to do cleanup(especially for non-react stuff)**
+  
