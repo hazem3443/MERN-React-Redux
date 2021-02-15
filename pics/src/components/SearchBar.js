@@ -23,10 +23,15 @@ class SearchBar extends React.Component {
     render() {
         return (
             <div className="ui segment">
-                <form className="ui form" onSubmit={this.props.onFormSubmit}>
+                <form className="ui form" onSubmit={this.onFormSubmit}>
                     <div className="field">
                         <label>Image Search</label>
-                        <input type="text" /*onClick={this.onInputClick}*/value={this.state.term} onChange={(e)=>{this.setState({term:e.target.value.toUpperCase()})}}/>
+                        
+                        <div className="ui icon input">
+                            <i className="search icon"></i>
+                            <input type="text" /*onClick={this.onInputClick}*/value={this.state.term} onChange={(e)=>{this.setState({term:e.target.value.toUpperCase()})}}/>
+                        </div>
+
                     </div>
                 </form>    
             </div> 
