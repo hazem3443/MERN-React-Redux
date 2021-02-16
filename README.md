@@ -113,3 +113,12 @@ for now this course will be organized by Coursera order list and under each less
 - **sit and wait until this component is not longer shown**
 - componetWillUnmount : **good place to do cleanup(especially for non-react stuff)**
   
+# 7. Handling User Input with Forms and Events
+## Controlled VS unControlled
+- controlled component is where we store data inside state
+- uncontrolled component is where we store data inside Dom
+- **notice** here that **this** is refer to call position not to defined position
+  - to force **this** to refer to fixed position no matter where it is called we can do 2 things
+    - for a class based component we can do a binding of this to the function scope in order to fix **this** for this method or function
+    - we can use arrow function which fixes this for it's code no matter where it is called
+
