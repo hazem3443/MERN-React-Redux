@@ -122,3 +122,4 @@ for now this course will be organized by Coursera order list and under each less
     - for a class based component we can do a binding of this to the function scope in order to fix **this** for this method or function
     - we can use arrow function which fixes this for it's code no matter where it is called
 
+# 8. Making API Requests with React
