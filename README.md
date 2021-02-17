@@ -132,3 +132,11 @@ for now this course will be organized by Coursera order list and under each less
 - keys has a performance issue for updating dom so we need to define it for the parent component list
 - key property helps react-dom to identify changed elements to be updated in a list
 - keys should be set in a unique id list to be rendered
+
+# 10. Using Ref's for DOM Access
+
+## React REFs
+a system to give you direct access to a single dom element that is rendered by a component
+
+- gives access to a single DOM element
+- we create refs in the constructor then we call it inside the constructor , assign them to instance variables on our class(**we can in theory asign references to state of our componentbut it is really not required to do so because these refs are not going to change over time and we never gona call setstate with the ref so no need to link it up to state in general we only put data in state if we expect it to change over time**), then pass to a particular JSX element as props
