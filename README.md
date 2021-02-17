@@ -123,3 +123,12 @@ for now this course will be organized by Coursera order list and under each less
     - we can use arrow function which fixes this for it's code no matter where it is called
 
 # 8. Making API Requests with React
+## for organizing our code
+- we need to create an api folder which holds a pre-configured instance with our base url and headers with access key or any other related data
+- axios returns a promise which we can use to do tasks after data received in sync way
+- we also can use async and await to do tasks in an async way but this holds all application
+  
+# 9. Building Lists of Records
+- keys has a performance issue for updating dom so we need to define it for the parent component list
+- key property helps react-dom to identify changed elements to be updated in a list
+- keys should be set in a unique id list to be rendered
