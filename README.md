@@ -140,3 +140,7 @@ a system to give you direct access to a single dom element that is rendered by a
 
 - gives access to a single DOM element
 - we create refs in the constructor then we call it inside the constructor , assign them to instance variables on our class(**we can in theory asign references to state of our componentbut it is really not required to do so because these refs are not going to change over time and we never gona call setstate with the ref so no need to link it up to state in general we only put data in state if we expect it to change over time**), then pass to a particular JSX element as props
+
+# 11. Let's Test Your React Mastery!
+
+# 12. On We Go...To Redux!
