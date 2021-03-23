@@ -142,5 +142,23 @@ a system to give you direct access to a single dom element that is rendered by a
 - we create refs in the constructor then we call it inside the constructor , assign them to instance variables on our class(**we can in theory asign references to state of our componentbut it is really not required to do so because these refs are not going to change over time and we never gona call setstate with the ref so no need to link it up to state in general we only put data in state if we expect it to change over time**), then pass to a particular JSX element as props
 
 # 11. Let's Test Your React Mastery!
+- an awesome app with awesome styling technique
 
 # 12. On We Go...To Redux!
+Redux is a state management library used with many languages to handle user data in a form or data stored methodology.
+redux is consisting of these steps
+- ## actions 
+  - used to identify data object to be inserted or updated or deleted from the store repository or vessel
+- ## dispatch
+  - used to send actions to the store vessel to be reduced into data object at reducer calls
+- ## reducer
+  - used to process inserted/updated/deleted/read or other action to be stored into the vessel which can be used in other components to be updated or readed 
+
+# 13. Integrating React with Redux
+## code file structure with React-Redux app
+- **src**
+  - **actions** -> contains files related to action creators for redux 
+  - **components** -> files related to components
+  - **reducers** -> files related to reducers
+  - **index.js** -> sets up both the react and redux sides of the app
+
