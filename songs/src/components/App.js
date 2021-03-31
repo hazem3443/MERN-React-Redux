@@ -20,16 +20,14 @@ const App = () =>{
                 </div>
             </div>
 
-            <div className="ui row">
-                <Provider store = {createStore(combineReducers({count:countreducer}))}>
-                    <Counter/>
-                </Provider>
-            </div>
-            <div className="ui row">
-                <Provider store = {createStore(combineReducers({count:countreducer}))}>
-                    <Counter/>
-                </Provider>
-            </div>
+            <Provider store = {createStore(combineReducers({count:countreducer}))}>
+                <Counter/>
+            </Provider>
+            
+            <Provider store = {createStore(combineReducers({count:countreducer}))}>
+                <Counter/>
+            </Provider>
+
         </div>
     ); 
 };

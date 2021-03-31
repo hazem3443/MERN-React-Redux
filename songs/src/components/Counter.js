@@ -2,13 +2,14 @@ import React from 'react';
 import {connect} from 'react-redux';
 
 const Counter = (props) => {
-    return ( 
-        <React.Fragment>
+    return (
+        <div className="ui row">
             <div className="column one wide">
                 <i 
                     onClick={props.increment}
                     className="angle up icon"
                 />
+                <br/>
                 <i 
                     onClick={props.decrement}
                     className="angle down icon"
@@ -16,11 +17,12 @@ const Counter = (props) => {
             </div>
             <div className="column two wide">
                 <div className="ui label">
-                  Counts
-                  <div className="detail">{props.count}</div>
+                    <div>Counts</div>
+                    
+                    <div className="detail">{props.count}</div>
                 </div>
             </div>
-        </React.Fragment>
+        </div>
     );
 }
 

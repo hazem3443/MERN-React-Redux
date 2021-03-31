@@ -149,10 +149,13 @@ Redux is a state management library used with many languages to handle user data
 redux is consisting of these steps
 - ## actions 
   - used to identify data object to be inserted or updated or deleted from the store repository or vessel
+  - pass data from user to redux vessle as a function that returns an object of data to be passed into redux vessle(reducer) function to be informed about action type to be stored properly into vessle
 - ## dispatch
   - used to send actions to the store vessel to be reduced into data object at reducer calls
+  - connects actions and reducer into our redux state it is implemented in redux library
 - ## reducer
   - used to process inserted/updated/deleted/read or other action to be stored into the vessel which can be used in other components to be updated or readed 
+  - a function that returns an object to be passed to our redux vessle on creation and modification to be stored on each action 
 
 # 13. Integrating React with Redux
 ## code file structure with React-Redux app
@@ -161,4 +164,20 @@ redux is consisting of these steps
   - **components** -> files related to components
   - **reducers** -> files related to reducers
   - **index.js** -> sets up both the react and redux sides of the app
+
+# 14. Async Actions with Redux Thunk
+## general data loading with redux
+  - Component gets rendered onto screen
+  - component's 'componentDidMount' gets called
+  - we call action creator from 'componentDidMount'
+  - action creator runs code to make an api request
+  - api responds with data
+  - action creator returns an 'action object' with the fetched data on the payload property
+  - some reducer sees the action returns the data off the 'payload'
+  - because we generated some new state object, redux/react-redux cause our react app to be rerendered
+
+## notice 
+- component are generally responsible for fetching data they need by calling an action creator
+- action creators are responsible for making API requests (this is where we use redux-thunk)
+- we get fetched data into a component by generating new state in our redux store, then getting that into our component through mapStateToProps
 
