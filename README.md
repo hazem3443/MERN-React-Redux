@@ -180,4 +180,14 @@ redux is consisting of these steps
 - component are generally responsible for fetching data they need by calling an action creator
 - action creators are responsible for making API requests (this is where we use redux-thunk)
 - we get fetched data into a component by generating new state in our redux store, then getting that into our component through mapStateToProps
+- action creator must return action object and must have a type property and optionally can have a payload
+
+# 15. Redux Store Design
+## Rules of reducers
+- must return any value (int ,str,obj,arr,null) except undefined
+- produces 'state', or data to be used inside of your app using only previous state and the action
+- must not return reach 'out of itself' to decide what value to return (reducers are pure) for for example shouldn't make api call or select data from dom element just work with actions and state or payload
+- must not mutate its input 'state' argument such as **.pop**, **.push** and **state[0]** inside our reducer that rule is misleading becasue actually you can change the state but it is not identified as a cahnge that forces our app to run so that change is happened but you can't force the app to rerender because in **combineReduceres** method it has a **hascahnged** flag that identifies the state cahnge by it's state reference & type not by it's content so no matter how you change the state **Redux's** reducer can't feel that you really did it and you can't see that change really happening  
+
+### need more practice on redux(async) hah ! you can find it here
 
